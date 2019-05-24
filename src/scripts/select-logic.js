@@ -886,7 +886,7 @@ function getExtraOutfields(outfieldsArr, sparrowLayerId) {
             //CATCHMENTS
             //finalChartArr.push("PNAME");
             finalChartArr.push("CUMAREAKM2");
-            finalChartArr.push("INCAREAKM2");
+            finalChartArr.push("INCAREAK_1");
             finalChartArr.push("COMID");
             break;
         case 1:

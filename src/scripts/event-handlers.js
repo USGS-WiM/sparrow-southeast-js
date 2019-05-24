@@ -32,6 +32,15 @@ function loadEventHandlers() {
         // hope the server sets Content-Disposition: attachment!
         window.location = nitrogenShapefileURL;
     });
+    $("#streamflowDownload").click(function () {
+        // hope the server sets Content-Disposition: attachment!
+        window.location = streamflowShapefileURL;
+    });
+    //UPDATE: important! make sure the file name is updated_____________________________________________________
+    $("#sedimentDownload").click(function () {
+        // hope the server sets Content-Disposition: attachment!
+        window.location = sedimentShapefileURL;
+    });
     $("#phosphorusCalibrationDownload").click(function() {
         // hope the server sets Content-Disposition: attachment!
         window.location = phosCalibrationURL;
