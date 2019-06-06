@@ -23,16 +23,16 @@ var mapCenter = [-84.0, 32.0];
 defaultZoomLevel = 6;
 
 borderThreshold = 10; //dynamic polygon border threshold.  When zoomed beyond this number borders appear
-var dynamicBorderLayers = ["Catchment", "8-Digit hydrologic unit code", "Tributary"]; //Aggregate layer choices placed in this array will have dynamic borders.  Each string MUST MATCH the text in the Group Results By Select to work.
+var dynamicBorderLayers = ["Catchment", "12-Digit hydrologic unit code", "8-Digit hydrologic unit code"]; //Aggregate layer choices placed in this array will have dynamic borders.  Each string MUST MATCH the text in the Group Results By Select to work.
 
 var initQueryParams = ["ST", "GP3", "GP2", "GP1"]; //used to query for the AOI dropdown values on app init.
 
 //used to set dynamic labels in chart
 var groupResultsLabels = {
     a: "Catchment ID",
-    b: "8-Digit hydrologic unit code",
-    c: "Tributary",
-    d: "River Basin",
+    b: "12-Digit hydrologic unit code",
+    c: "8-Digit hydrologic unit code",
+    d: "4-Digit hydrologic unit code",
     e: "State"
 };
 
@@ -49,33 +49,33 @@ var sedimentCalibrationURL = rootURL + "southeast_calibration_sites_ss.zip";
 
 var tableOutFields = [
     { field: "FID", name: "Unique Feature Id" },
-    { field: "GRP1", name: "Main River Basin" },
-    { field: "GRP2", name: "Tributary" },
+    { field: "GRP1", name: "4-Digit hydrologic unit code" },
+    { field: "GRP2", name: "8-Digit hydrologic unit code" },
     { field: "GRP_3_NA_1", name: "Join Field" },
-    { field: "Area_g3", name: "HUC10 area (mi2)" }
+    { field: "Area_g3", name: "HUC12 area (mi2)" }
 ];
 
 var stateTableOutFields = [
     { field: "FID", name: "Unique Feature Id" },
-    { field: "ST_GP3_NAM", name: "HUC10/State (combination) ID" },
-    { field: "Area_S3", name: "HUC10 area within the state and the  model area (mi2)" },
+    { field: "ST_GP3_NAM", name: "HUC12/State (combination) ID" },
+    { field: "Area_S3", name: "HUC12 area within the state and the  model area (mi2)" },
     { field: "ST", name: "State" },
-    { field: "GRP_1_NAM", name: "Independent Watershed name (in which HUC10 is nested)" },
-    { field: "GP2", name: "HUC8 (in which HUC10 is nested)" },
-    { field: "GRP_3_NAM", name: "HUC10" },
+    { field: "GRP_1_NAM", name: "Independent Watershed name (in which HUC4 is nested)" },
+    { field: "GP2", name: "HUC8 (in which HUC8 is nested)" },
+    { field: "GRP_3_NAM", name: "HUC12" },
     { field: "ST_GP1_NAM", name: "State and Independent Watershed" },
-    { field: "ST_GP2_NAM", name: "State amd HUC8" },
+    { field: "ST_GP2_NAM", name: "State and HUC8" },
     { field: "ST_gp3_n_1", name: "Join Field" }
 ];
 
 var aggregateDefinitions = {
     st: "State",
-    gp1: "Major Drainage Area",
-    gp2: "Tributary",
-    gp3: "HUC8/Sub-sub drainage ",
-    sg1: "State_Drainage Area",
-    sg2: "State_Tributary",
-    sg3: "State_HUC8"
+    gp1: "4-Digit hydrologic unit code",
+    gp2: "8-Digit hydrologic unit code",
+    gp3: "12-Digit hydrologic unit code",
+    sg1: "State_HUC4",
+    sg2: "State_HUC8",
+    sg3: "State_HUC12"
 };
 
 // key, value pairs come from PHOSPHORUS attribute definitions Excel file
