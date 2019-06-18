@@ -201,9 +201,39 @@ var sedimentSourceDefinitions = {
     s8: "Transitional Land and Residuum in sedimentary rock(discontinuous)",
     s9: "Transitional Land and Fine - and medium - grained sediments, residuum in alluvium, and residuum in carbonate and fine - grained sedimentary rock",
     s10: "Forested Land and all surficial geology classes",
-    s11: "Channel Sources" 
+    s11: "Channel Sources"
 
 };
+
+var sedimentSourceDefinitions_DAL = {
+    s1: "Urban Land and Alluvium and residuum in very fine- grained sedimentary rock and igneous and metamorphic rock",
+    s2: "Urban Land and Residuum in sedimentary rock(discontinuous)",
+    s3: "Urban Land and Fine - and medium - grained sediments, residuum in alluvium, and residuum in carbonate and fine - grained sedimentary rock",
+    s4: "Agricultural Land and Alluvium and residuum in very fine - grained sedimentary rock and igneous and metamorphic rock",
+    s5: "Agricultural Land and Residuum in sedimentary rock(discontinuous)",
+    s6: "Agricultural Land and Fine - and medium - grained sediments, residuum in alluvium, and residuum in carbonate and fine - grained sedimentary rock",
+    s7: "Transitional Land and Alluvium and residuum in very fine - grained sedimentary rock and igneous and metamorphic rock",
+    s8: "Transitional Land and Residuum in sedimentary rock(discontinuous)",
+    s9: "Transitional Land and Fine - and medium - grained sediments, residuum in alluvium, and residuum in carbonate and fine - grained sedimentary rock",
+    s0: "Forested Land and all surficial geology classes",
+    10: "Channel Sources" 
+};
+
+var sedimentSourceDefinitions_DAY = {
+    s1: "Urban Land and Alluvium and residuum in very fine- grained sedimentary rock and igneous and metamorphic rock",
+    s2: "Urban Land and Residuum in sedimentary rock(discontinuous)",
+    s3: "Urban Land and Fine - and medium - grained sediments, residuum in alluvium, and residuum in carbonate and fine - grained sedimentary rock",
+    s4: "Agricultural Land and Alluvium and residuum in very fine - grained sedimentary rock and igneous and metamorphic rock",
+    s5: "Agricultural Land and Residuum in sedimentary rock(discontinuous)",
+    s6: "Agricultural Land and Fine - and medium - grained sediments, residuum in alluvium, and residuum in carbonate and fine - grained sedimentary rock",
+    s7: "Transitional Land and Alluvium and residuum in very fine - grained sedimentary rock and igneous and metamorphic rock",
+    s8: "Transitional Land and Residuum in sedimentary rock(discontinuous)",
+    s9: "Transitional Land and Fine - and medium - grained sediments, residuum in alluvium, and residuum in carbonate and fine - grained sedimentary rock",
+    11: "Forested Land and all surficial geology classes",
+    12: "Channel Sources"
+};
+
+
 
 /**get the HEX values below from project Google Doc and make sure:  
     1. each color corresponds with the order of SourceDefinitions objects above  
@@ -661,7 +691,7 @@ var Catchments_st_tn = [
     {
         field: "ACCL",
         name: catchmentDefinitions_tn.accl,
-        chartOutfields: getFields(nitrogenSourceDefinitions, catchmentDefinitions_tn, "al", "st_comid")
+        chartOutfields: getFields(nitrogenSourceDefinitions, catchmentDefinitions_tn, "accl", "st_comid")
     },
     {
         field: "CONCENTRAT",
@@ -919,7 +949,7 @@ var Catchments_st_q = [
     {
         field: "ACCL",
         name: catchmentDefinitions_q.accl,
-        chartOutfields: getFields(streamflowSourceDefinitions, catchmentDefinitions_q, "al", "st_comid")
+        chartOutfields: getFields(streamflowSourceDefinitions, catchmentDefinitions_q, "accl", "st_comid")
     },
     {
         field: "INCL",
@@ -1090,7 +1120,7 @@ var Group3_ss = [
     {
         field: "GP3_DAL",
         name: mappedDefinitions_ss.dal,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "dal", "gp3")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAL, mappedDefinitions_ss, "dal", "gp3")
     },
     {
         field: "GP3_AY",
@@ -1100,7 +1130,7 @@ var Group3_ss = [
     {
         field: "GP3_DAY",
         name: mappedDefinitions_ss.day,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "day", "gp3")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAY, mappedDefinitions_ss, "day", "gp3")
     }
 ];
 
@@ -1113,7 +1143,7 @@ var Group2_ss = [
     {
         field: "GP2_DAL",
         name: mappedDefinitions_ss.dal,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "dal", "gp2")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAL, mappedDefinitions_ss, "dal", "gp2")
     },
     {
         field: "GP2_AY",
@@ -1123,7 +1153,7 @@ var Group2_ss = [
     {
         field: "GP2_DAY",
         name: mappedDefinitions_ss.day,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "day", "gp2")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAY, mappedDefinitions_ss, "day", "gp2")
     }
 ];
 
@@ -1136,7 +1166,7 @@ var Group1_ss = [
     {
         field: "GP1_DAL",
         name: mappedDefinitions_ss.dal,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "dal", "gp1")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAL, mappedDefinitions_ss, "dal", "gp1")
     },
     {
         field: "GP1_AY",
@@ -1146,7 +1176,7 @@ var Group1_ss = [
     {
         field: "GP1_DAY",
         name: mappedDefinitions_ss.day,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "day", "gp1")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAY, mappedDefinitions_ss, "day", "gp1")
     }
 ];
 
@@ -1159,7 +1189,7 @@ var ST_ss = [
     {
         field: "ST_DAL",
         name: mappedDefinitions_ss.dal,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "dal", "st")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAL, mappedDefinitions_ss, "dal", "st")
     },
     {
         field: "ST_AY",
@@ -1169,7 +1199,7 @@ var ST_ss = [
     {
         field: "ST_DAY",
         name: mappedDefinitions_ss.day,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "day", "st")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAY, mappedDefinitions_ss, "day", "st")
     }
 ];
 
@@ -1177,7 +1207,7 @@ var Catchments_st_ss = [
     {
         field: "ACCL",
         name: catchmentDefinitions_ss.accl,
-        chartOutfields: getFields(sedimentSourceDefinitions, catchmentDefinitions_ss, "al", "st_comid")
+        chartOutfields: getFields(sedimentSourceDefinitions, catchmentDefinitions_ss, "accl", "st_comid")
     },
     {
         field: "CONCENTRAT",
@@ -1234,7 +1264,7 @@ var Group3_st_ss = [
     {
         field: "SG3_DAL",
         name: mappedDefinitions_ss.dal,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "dal", "sg3")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAL, mappedDefinitions_ss, "dal", "sg3")
     },
     {
         field: "SG3_AY",
@@ -1244,7 +1274,7 @@ var Group3_st_ss = [
     {
         field: "SG3_DAY",
         name: mappedDefinitions_ss.day,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "day", "sg3")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAY, mappedDefinitions_ss, "day", "sg3")
     }
 ];
 
@@ -1257,7 +1287,7 @@ var Group2_st_ss = [
     {
         field: "SG2_DAL",
         name: mappedDefinitions_ss.dal,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "dal", "sg2")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAL, mappedDefinitions_ss, "dal", "sg2")
     },
     {
         field: "SG2_AY",
@@ -1267,7 +1297,7 @@ var Group2_st_ss = [
     {
         field: "SG2_DAY",
         name: mappedDefinitions_ss.day,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "day", "sg2")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAY, mappedDefinitions_ss, "day", "sg2")
     }
 ];
 
@@ -1280,7 +1310,7 @@ var Group1_st_ss = [
     {
         field: "SG1_DAL",
         name: mappedDefinitions_ss.dal,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "dal", "sg1")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAL, mappedDefinitions_ss, "dal", "sg1")
     },
     {
         field: "SG1_AY",
@@ -1290,7 +1320,7 @@ var Group1_st_ss = [
     {
         field: "SG1_DAY",
         name: mappedDefinitions_ss.day,
-        chartOutfields: getFields(sedimentSourceDefinitions, mappedDefinitions_ss, "day", "sg1")
+        chartOutfields: getFields(sedimentSourceDefinitions_DAY, mappedDefinitions_ss, "day", "sg1")
     }
 ];
 ////END SUSPENDED SEDIMENT LAYER GROUPS______________________________________________________________________________________________________________________________
