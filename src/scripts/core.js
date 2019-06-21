@@ -1264,28 +1264,28 @@ require([
                             //UPDATE important! make sure the field names below match what is in the REST layer
                             calibrationTemplateN.setContent(
                                 "<div><b>Station Name:</b> " +
-                                responseObj.feature.attributes.STATION_NM +
+                                responseObj.feature.attributes.Station_nm +
                                 "</div><br>" +
                                 "<div><b>Station identifier:</b> </b>" +
-                                responseObj.feature.attributes.STATION_ID +
+                                responseObj.feature.attributes.Station_id +
                                 "</div><br>" +
                                 "<div><b>SPARROW Reach ID: </b>" +
-                                responseObj.feature.attributes.COMID +
+                                responseObj.feature.attributes.comid +
                                 "</div><br>" +
                                 "<div><b>Constituent (SSC or TSS): </b>" +
-                                responseObj.feature.attributes.CONSTITUEN +
+                                responseObj.feature.attributes.Constituen +
                                 "</div><br>" +
                                 "<div><b>Beale or Fluxmaster Estimated SSC or TSS Load (MT/yr): " +
                                 "</b>" +
-                                responseObj.feature.attributes.ACTUAL_MT +
+                                responseObj.feature.attributes.Actual_mt +
                                 "</div><br>" +
                                 "<div><b>SPARROW Estimated Factor for converting TSS to SSC: " +
                                 "</b>" +
-                                responseObj.feature.attributes.TSS_CONV +
+                                responseObj.feature.attributes.TSS_conv +
                                 "</div><br>" +
                                 "<div><b>SPARROW Estimated SSC Load (MT/yr): " +
                                 "</b>" +
-                                responseObj.feature.attributes.PLOAD_MT +
+                                responseObj.feature.attributes.PLOAD_mt +
                                 "</div><br>"
                             );
 
