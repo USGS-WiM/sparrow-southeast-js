@@ -37,7 +37,7 @@ var groupResultsLabels = {
 };
 
 //download locations
-var rootURL = "https://test.wim.usgs.gov/SparrowSoutheast/downloads/";
+var rootURL = "https://sparrow.wim.usgs.gov/southeast/downloads/";
 var phosphorusShapefileURL = rootURL + "southeast_shapefiles_phosphorus.zip";
 var streamflowShapefileURL = rootURL + "southeast_shapefiles_streamflow.zip";
 var sedimentShapefileURL = rootURL + "southeast_shapefiles_sediment.zip";
