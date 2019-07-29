@@ -216,7 +216,7 @@ var sedimentSourceDefinitions_DAL = {
     s8: "Transitional Land and Residuum in sedimentary rock(discontinuous)",
     s9: "Transitional Land and Fine - and medium - grained sediments, residuum in alluvium, and residuum in carbonate and fine - grained sedimentary rock",
     s0: "Forested Land and all surficial geology classes",
-    10: "Channel Sources" 
+    10: "Channel Sources"
 };
 
 var sedimentSourceDefinitions_DAY = {
