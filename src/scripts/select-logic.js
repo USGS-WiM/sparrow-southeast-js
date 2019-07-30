@@ -857,7 +857,7 @@ function getLegendLabels(sparrowLayerId) {
           label = item.name;
       }
     });
-    if (app.chosenSource) {label += ' ' + app.chosenSource.label}
+    if (app.chosenSource) {label += ' from ' + app.chosenSource.label}
     return nutrientModel + ", " + label;
 } //END getLegendLabels()
 
