@@ -387,7 +387,7 @@ var Group1 = [
     {
         field: "GP1_AY",
         name: mappedDefinitions.ay,
-        chartOutfields: getFields(phosphorusSourceDefinitions, mappedDefinitions, "day", "gp1")
+        chartOutfields: getFields(phosphorusSourceDefinitions, mappedDefinitions, "ay", "gp1")
     },
     {
         field: "GP1_DAY",
