@@ -1,0 +1,29 @@
+{
+  "name": "wim-styles",
+  "version": "0.0.3",
+  "homepage": "https://github.com/USGS-WiM/wim-styles",
+  "authors": [],
+  "description": "Styling for WiM",
+  "main": [
+    "./css/base.css",
+    "./less/*"
+  ],
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.3",
+    "commit": "5d9761e49e3b666708d93ba54f7c9f5d492ea86b"
+  },
+  "_source": "https://github.com/USGS-WiM/wim-styles.git",
+  "_target": "*",
+  "_originalSource": "USGS-WiM/wim-styles"
+}
