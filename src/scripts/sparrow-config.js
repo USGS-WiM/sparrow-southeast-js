@@ -250,7 +250,7 @@ var nitroToColors = ["#580000", "#4c044c", "#6e5900", "#120900", "#174f00"];
 var streamflowColors = ["#579689", "#BF0000", "#BB8FCE", "#2ECC71"];
 var streamflowToColors = ["#004134", "#580000", "#3e0059", "#002d24"];
 
-var sedimentColors = ["#ff3fff", "#8b628b", "#f2dcdb", "#d6ad00", "#ffe885", "#fff811", "#000000", "#08612e", "#0eaa51", "#a2eb85", "#f58833"]
+var sedimentColors = ["#ff3fff", "#ffb9ff", "#f2dcdb", "#d6ad00", "#ffe885", "#fff811", "#000000", "#08612e", "#0eaa51", "#a2eb85", "#f58833"]
 var sedimentToColors = ["#450b05", "#8c1508", "#840c00", "#2a1f00", "#624e00", "#6c5f01", "#002811", "#004d3e", "#32514b", "#3e0059", "#743707"];
 
 function getFields(sourceDefObj, mappedDefObj, definitionCode, group) {
