@@ -127,7 +127,7 @@ require([
                 }
             }
         },
-       /*  {
+       {
             groupHeading: "Auxiliary Layers",
             showGroupHeading: true,
             includeInLayerList: true,
@@ -150,11 +150,11 @@ require([
                         includeLegend: false
                     }
                 },
-                "Reaches > 150 cfs": {
+                "Reaches > 100 cfs": {
                     url: serviceBaseURL,
                     visibleLayers: [41],
                     options: {
-                        id: "gt150",
+                        id: "gt100",
                         visible: false
                     },
                     wimOptions: {
@@ -199,6 +199,6 @@ require([
                     }
                 }
             }
-        } */
+        }
     ];
 });

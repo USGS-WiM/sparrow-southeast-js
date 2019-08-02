@@ -241,16 +241,16 @@ var sedimentSourceDefinitions_DAY = {
     3. find coordinating colors (using some sort of gradient generator) and add to the 
       **ToColors arrays. The code will order it from light --> dark, so don't worry about that.
 **/
-var phosColors = ["#BF0000", "#FFCCFF", "#FFEC99", "#663100", "#08612e", "#A2EB85"];
+var phosColors = ["#BF0000", "#FFCCFF", "#FFEC99", "#663100", "#57612e", "#A2EB85"];
 var phosToColors = ["#580000", "#4c044c", "#6e5900", "#120900", "#002811", "#174f00"];
 
-var nitroColors = ["#BF0000", "#FFCCFF", "#FFEC99", "#663100", "#A2EB85"];
+var nitroColors = ["#BF0000", "#FFCCFF", "#FFEC99", "#663100", "#579625",];
 var nitroToColors = ["#580000", "#4c044c", "#6e5900", "#120900", "#174f00"];
 
 var streamflowColors = ["#579689", "#BF0000", "#BB8FCE", "#2ECC71"];
 var streamflowToColors = ["#004134", "#580000", "#3e0059", "#002d24"];
 
-var sedimentColors = ["#78281f", "#ec7063", "#fadbd8", "#a87e06", "#c7a726", "#f0e27e", "#08612e", "#1ABC9C", "#b6e4db", "#BB8FCE", "#f58833"]
+var sedimentColors = ["#ff3fff", "#8b628b", "#f2dcdb", "#d6ad00", "#ffe885", "#fff811", "#000000", "#08612e", "#0eaa51", "#a2eb85", "#f58833"]
 var sedimentToColors = ["#450b05", "#8c1508", "#840c00", "#2a1f00", "#624e00", "#6c5f01", "#002811", "#004d3e", "#32514b", "#3e0059", "#743707"];
 
 function getFields(sourceDefObj, mappedDefObj, definitionCode, group) {
