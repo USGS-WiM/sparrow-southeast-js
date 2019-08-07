@@ -53,7 +53,7 @@ function loadEventHandlers() {
         // hope the server sets Content-Disposition: attachment!
         window.location = sedimentCalibrationURL;
     });
-    $("#streamfowCalibrationDownload").click(function () {
+    $("#streamflowCalibrationDownload").click(function () {
         // hope the server sets Content-Disposition: attachment!
         window.location = streamflowCalibrationURL;
     });
