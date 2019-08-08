@@ -6,7 +6,7 @@ THIS CONFIG REMOVES CATCHMENT AND AGGREGATE LABELS FROM THE CHARTOUTFIELS OBJECT
 ALSO uses SPARROWID and ST_SPARRID in place of COMID, ST_COMID
 */
 
-var appTitle = "2012 SPARROW Models for the Southeast: Streamflow, Total Nitrogen, Total Phosphorus and Suspended Sediment";
+var appTitle = "2012 SPARROW Models for the Southeast: Total Phosphorus, Total Nitrogen, Suspended Sediment, and Streamflow";
 var appVersion = "v0.9.0"; // could pull this from code/package.json
 
 var serviceBaseURL =
