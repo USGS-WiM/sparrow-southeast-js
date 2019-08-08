@@ -845,10 +845,10 @@ function getLegendLabels(sparrowLayerId) {
             return "Total Nitrogen";
         }
         if (sparrowLayerId >= 18 && sparrowLayerId <= 26) {
-            return "Total Streamflow";
+            return "Streamflow";
         }
         if (sparrowLayerId > 26) {
-            return "Total Suspended Sediment";
+            return "Suspended Sediment";
         }
     }
     var nutrientModel = setModel(sparrowLayerId);
@@ -1085,11 +1085,7 @@ function generateRenderer() {
             );
         }
 
-        var colorIndex = NaN;
-        if (app.chosenSource) {
-          // if source selected in sidebar, render based on that source's color in chart
-          colorIndex = app.chosenSource.attribute.split('_S')[1] - 1;
-        }
+       
         var colorRamp = new AlgorithmicColorRamp();
         //different ramps for phos/nitro
         if ($(".radio input[type='radio']:checked")[0].id == "radio1") {
@@ -1116,14 +1112,6 @@ function generateRenderer() {
             colorRamp.fromColor = new Color.fromHex((app.chosenSource != undefined) ? fromSourceColor : "#FFF6CF");//more saturated yellow
             //colorRamp.toColor = new Color.fromHex((!isNaN(colorIndex) ? sedimentColors[colorIndex] : "#B24903"));//original dark
             colorRamp.toColor = new Color.fromHex((app.chosenSource != undefined) ? toSourceColor : "#A04100");
-        }
-
-        // make sure the lighter colors are the from colors
-        var toColor = colorRamp.toColor;
-        var fromColor = colorRamp.fromColor;
-        if (!isNaN(colorIndex) && toColor.r > fromColor.r) {
-          colorRamp.toColor = fromColor;
-          colorRamp.fromColor = toColor;
         }
 
         colorRamp.algorithm = "hsv"; // options are:  "cie-lab", "hsv", "lab-lch"
