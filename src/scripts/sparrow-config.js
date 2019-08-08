@@ -149,10 +149,10 @@ var mappedDefinitions = {
 
 var mappedDefinitions_q = {
     area: "Aggregated area (km2)",
-    al: "Accumulated flow (cfs)",
-    ay: "Accumulated yield (mm/yr)",
-    dal: "Delivered accumulated flow (cfs)",
-    day: "Delivered accumulated yield (mm/yr)"
+    al: "Aggregated flow (cfs)",
+    ay: "Aggregated yield (mm/yr)",
+    dal: "Delivered aggregated flow (cfs)",
+    day: "Delivered aggregated yield (mm/yr)"
 };
 
 var mappedDefinitions_ss = {
