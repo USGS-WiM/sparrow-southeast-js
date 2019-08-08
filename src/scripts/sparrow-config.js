@@ -38,10 +38,10 @@ var groupResultsLabels = {
 
 //download locations
 var rootURL = "https://sparrow.wim.usgs.gov/southeast/downloads/";
-var phosphorusShapefileURL = rootURL + "southeast_shapefiles_phosphorus.zip";
-var streamflowShapefileURL = rootURL + "southeast_shapefiles_streamflow.zip";
-var sedimentShapefileURL = rootURL + "southeast_shapefiles_sediment.zip";
-var nitrogenShapefileURL = rootURL + "southeast_shapefiles_nitrogen.zip";
+var phosphorusShapefileURL = rootURL + "southeast_cats_results_tp.zip";
+var streamflowShapefileURL = rootURL + "southeast_cats_results_q.zip";
+var sedimentShapefileURL = rootURL + "southeast_cats_results_ss.zip";
+var nitrogenShapefileURL = rootURL + "southeast_cats_results_tn.zip";
 var phosCalibrationURL = rootURL + "southeast_calibration_sites_tp.zip";
 var nitroCalibrationURL = rootURL + "southeast_calibration_sites_tn.zip";
 var streamflowCalibrationURL = rootURL + "southeast_calibration_sites_q.zip";
@@ -244,7 +244,7 @@ var sedimentSourceDefinitions_DAY = {
 var phosColors = ["#BF0000", "#FFCCFF", "#FFEC99", "#663100", "#57612e", "#A2EB85"];
 var phosToColors = ["#580000", "#4c044c", "#6e5900", "#120900", "#002811", "#174f00"];
 
-var nitroColors = ["#BF0000", "#FFCCFF", "#FFEC99", "#663100", "#579625",];
+var nitroColors = ["#BF0000", "#FFCCFF", "#FFEC99", "#663100", "#c9daf8"];
 var nitroToColors = ["#580000", "#4c044c", "#6e5900", "#120900", "#174f00"];
 
 var streamflowColors = ["#579689", "#BF0000", "#BB8FCE", "#2ECC71"];

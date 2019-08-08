@@ -1964,10 +1964,10 @@ require([
             $("#chartWindowPanelTitle").text("Total Nitrogen " + labelySelect());
         } 
         if ($('.radio input[type="radio"]:checked')[0].id == "radio3") {
-            $("#chartWindowPanelTitle").text("Total Streamflow " + labelySelect());
+            $("#chartWindowPanelTitle").text("Streamflow " + labelySelect());
         }
         if ($('.radio input[type="radio"]:checked')[0].id == "radio4") {
-            $("#chartWindowPanelTitle").text("Total Suspended Sediment " + labelySelect());
+            $("#chartWindowPanelTitle").text("Suspended Sediment " + labelySelect());
         }
 
         if (response.features.length <= 1 || app.customChartClicked) {
