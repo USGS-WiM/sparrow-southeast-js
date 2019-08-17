@@ -165,7 +165,7 @@ var mappedDefinitions_ss = {
 
 /***UPDATE IMPORTANT! complete with source data Excel key***/
 var phosphorusSourceDefinitions = {
-    s1: "Sewerage Point Sources",
+    s1: "Municipal Wastewater Treatment Discharge",
     s2: "Urban Land",
     s3: "Farm Fertilizer",
     s4: "Manure",
@@ -175,7 +175,7 @@ var phosphorusSourceDefinitions = {
 
 /***UPDATE IMPORTANT! complete with source data Excel key***/
 var nitrogenSourceDefinitions = {
-    s1: "Sewerage Point Sources",
+    s1: "Municipal Wastewater Treatment Discharge",
     s2: "Urban Land",
     s3: "Farm Fertilizer",
     s4: "Manure",

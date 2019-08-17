@@ -2292,7 +2292,7 @@ require([
                     borderColor: "#CCC",
                     borderWidth: 1,
                     shadow: false,
-                    itemWidth: 300,
+                    itemWidth: 350,
                     labelFormatter: function() {
                         var yI = this.name.indexOf(")");
                         var shortName = "";
