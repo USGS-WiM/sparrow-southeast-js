@@ -1170,12 +1170,21 @@ function generateRenderer() {
             if (!app.hasOwnProperty("legend")) {
                 createLegend();
             } else {
-                app.legend.refresh([
-                    {
-                        layer: app.map.getLayer("SparrowRanking"),
-                        title: getLegendLabels(app.map.getLayer("SparrowRanking").visibleLayers[0])
+                var legendInfo = app.legend.layerInfos;
+                //remove/replace SparrowRanking only so other visible layers aren't removed from legend on refresh
+                $.each(legendInfo, function (index, layerobj) {
+                    if (layerobj.layer.id == "SparrowRanking") {
+                        legendInfo.splice(index);
+                    } else {
+                        continue
                     }
-                ]);
+                });
+                var newSparrowRanking = {
+                    layer: app.map.getLayer("SparrowRanking"),
+                    title: getLegendLabels(app.map.getLayer("SparrowRanking").visibleLayers[0])
+                }
+                legendInfo.push(newSparrowRanking);
+                app.legend.refresh(legendInfo);
             }
             if (layer.visible == false) {
                 layer.show();
