@@ -2078,7 +2078,7 @@ require([
                     events: {
                         load: function() {
                           var chart = this;
-                          chart.renderer.text('<div><i class="fa fa-mouse-pointer"></i> Click on legend elements to toggle on/off layers</div>', 100, 40, true)
+                          chart.renderer.text('<div><i class="fa fa-mouse-pointer"></i> Click on legend elements to toggle on/off sources</div>', 100, 40, true)
                             .css({
                               fontSize: '13px'
                             })
@@ -2221,7 +2221,7 @@ require([
                             align: "right",
                             menuItems: [
                                 {
-                                    text: "Download PNG",
+                                    text: "Download chart (PNG)",
                                     onclick: function() {
                                         this.exportChart({
                                             type: "PNG"
@@ -2229,19 +2229,19 @@ require([
                                     }
                                 },
                                 {
-                                    text: "Download CSV",
+                                    text: "Download table (CSV)",
                                     onclick: function() {
                                         this.downloadCSV();
                                     }
                                 },
                                 {
-                                    text: "Download Excel",
+                                    text: "Download table (Excel)",
                                     onclick: function() {
                                         this.downloadXLS();
                                     }
                                 },
                                 {
-                                    text: "Change Background Transparency",
+                                    text: "Change Chart Transparency",
                                     onclick: function() {
                                         //check for rgba vs. rgb
                                         if (
