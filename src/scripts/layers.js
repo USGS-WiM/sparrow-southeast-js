@@ -182,7 +182,7 @@ require([
                         includeLegend: false
                     }
                 },
-                "Land Use 2012 (NLCD)": {
+                "NLCD Land Use 2012": {
                     url: "https://gis.wim.usgs.gov/arcgis/rest/services/SWTrends/lu2012_100515_test/ImageServer",
                     options: {
                         id: "lu2012",
