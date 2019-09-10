@@ -1171,20 +1171,16 @@ function generateRenderer() {
                 createLegend();
             } else {
                 var legendInfo = app.legend.layerInfos;
-                //remove/replace SparrowRanking only so other visible layers aren't removed from legend on refresh
-                $.each(legendInfo, function (index, layerobj) {
-                    if (layerobj.layer.id == "SparrowRanking") {
-                        legendInfo.splice(index);
-                    } else {
-                        continue
-                    }
+                //get rid of sparrow ranking while saving other legend elements
+                var updatedLegendInfos = $.grep(legendInfo, function (value) {
+                    return value.layer.id !== "SparrowRanking";
                 });
                 var newSparrowRanking = {
                     layer: app.map.getLayer("SparrowRanking"),
                     title: getLegendLabels(app.map.getLayer("SparrowRanking").visibleLayers[0])
                 }
-                legendInfo.push(newSparrowRanking);
-                app.legend.refresh(legendInfo);
+                updatedLegendInfos.unshift(newSparrowRanking); //put sparrowRanking @ front of array to maintain legend layer order
+                app.legend.refresh(updatedLegendInfos);
             }
             if (layer.visible == false) {
                 layer.show();
