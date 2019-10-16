@@ -2293,6 +2293,7 @@ require([
                     borderWidth: 1,
                     shadow: false,
                     itemWidth: 350,
+                    itemStyle: {"fontSize": "12px", "textOverflow": undefined},
                     labelFormatter: function() {
                         var yI = this.name.indexOf(")");
                         var shortName = "";
