@@ -1129,23 +1129,28 @@ function generateRenderer() {
             //calculate legend values to 3 significant figures
             function sigFigures(n) {
                 if (n > 0) {
-                    return parseFloat(n.toPrecision(3));
+                    //return values as 3 significant figures with comma separated thousands
+                    return parseFloat(n.toPrecision(3)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 } else {
-                    return n;
+                    return n.toString();
                 }
             }
 
             $.each(renderer.infos, function(index, info) {
-                //calculate sig figures
+                //calculate sig figures; sigFigures returns string
                 var minVal = sigFigures(info.minValue);
                 var maxVal = sigFigures(info.maxValue);
 
-                //set new label
+                //set new 
+
                 if (index == 4) {
                     //handle greater than for last label maxValue
-                    var newLabel = "greater than "+ minVal.toString();
+                    var newLabel = "> "+ minVal;
+                } else if (index == 0){
+                    //no greater than for 1st legend itm
+                    var newLabel = minVal + " - " + maxVal;
                 } else {
-                    var newLabel = minVal.toString() + " - " + maxVal.toString();
+                    var newLabel = "> " + minVal + " - " + maxVal;
                 }
                 renderer.infos[index].label = newLabel;
             });
