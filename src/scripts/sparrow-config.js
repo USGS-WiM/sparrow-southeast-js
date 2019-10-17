@@ -179,7 +179,7 @@ var nitrogenSourceDefinitions = {
     s2: "Urban Land",
     s3: "Farm Fertilizer, including indirect transport through atmosphere to stream",
     s4: "Manure, including indirect transport through atmosphere to stream",
-    s5: "Atmospheric Emissions (and Subsequent Deposition) from Power Plants, Other Industry, Vehicles, and Background"
+    s5: "Atmospheric Emissions and Subsequent Deposition from Power Plants, Other Industry, Vehicles, and Background"
 };
 
 /***UPDATE IMPORTANT! complete with source data Excel key***/
