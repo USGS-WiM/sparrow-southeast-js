@@ -224,7 +224,7 @@
                             </br>
 
                             <p class="p-meta p-light fullwidth">
-                                <b>Incremental Flow or Incremental Load</b><br/> The predicted mean daily flow (cubic feet per second) or mean annual load of the constituent (kilograms or metric tons
+                                <b>Incremental Flow or Incremental Load</b><br/> The predicted mean daily flow (cfs, cubic feet per second) or mean annual load of the constituent (kg, kilograms or MT, metric tons
                                 per year) leaving a stream reach that reflects only those sources contributed from within the incremental drainage area
                                 of that reach. The incremental value includes the effects of in-stream attenuation processes associated with one half of
                                 the incremental reach length. Incremental drainage areas are represented here as “catchments”.
@@ -255,17 +255,27 @@
                             <p class="p-meta p-light fullwidth">
                                 <b>Aggregated Yield</b><br/> The AggregaThe Aggregated Flow or Load divided by the sum of the "grouped by" incremental drainage areas. Units are millimeters per
                                 year, kilograms per square kilometer per year or metric tons per square kilometer per year.
+                            </p>
 
+                            <p class="p-meta p-light fullwidth">
+                                <b>Delivery Fraction (definition)</b><br /> The fraction of the flow or load leaving a reach that is not attenuated
+                                or removed by natural processes during
+                                downstream transport to a specified downstream target reach. A delivery fraction of 1 indicates that 100 percent of
+                                the
+                                flow or load leaving the reach is delivered to the downstream target.
+                                <br /> For delivered results shown here, the downstream targets represent the South Atlantic coast and the Gulf of
+                                Mexico coast of the US.
+                            </p>
+
+                            <p class="p-meta p-light fullwidth">
+                                <b>Delivered Incremental Flow or Delivered Incremental Load</b><br/> Incremental flow or load multiplied by the delivery fraction.
                             </p>
                             <p class="p-meta p-light fullwidth">
-                                <b>Delivered Incremental Flow or Delivered Incremental Load</b><br/> Incremental flow or load multiplied by the delivery fraction. Delivery fraction is defined below.
-                            </p>
-                            <p class="p-meta p-light fullwidth">
-                                <b>Delivered Accumulated Flow or Delivered Accumulated Load</b><br/> Accumulated flow or load multiplied by the delivery fraction. Delivery fraction is defined below.
+                                <b>Delivered Accumulated Flow or Delivered Accumulated Load</b><br/> Accumulated flow or load multiplied by the delivery fraction.
                             </p>
                             <p class="p-meta p-light fullwidth">
                                 <b>Delivered Aggregated Flow or Delivered Aggregated Load</b><br/> For results grouped by 4-digit, 8-digit, 12-digit HUC or state, delivered aggregated flow or load represents the sum of
-                                delivered incremental flows or loads for those selected areas. Delivery fraction is defined below.
+                                delivered incremental flows or loads for those selected areas.
                             </p>
                             <p class="p-meta p-light fullwidth">
                                 <b>Delivered Incremental Yield</b><br/> The Delivered Incremental Flow or Load divided by the incremental drainage area of the reach. Units are millimeters per
@@ -281,15 +291,7 @@
                                 <b>Delivered Aggregated Yield</b><br/> The Delivered Aggregated Flow or Load divided by the sum of the “grouped by” incremental drainage areas. Units are
                                 millimeters per year, kilograms per square kilometer per year or metric tons per square kilometer per year.
                             </p>
-                            <p class="p-meta p-light fullwidth">
 
-                                <b>Delivery Fraction (definition)</b><br/> The fraction of the flow or load leaving a reach that is not attenuated or removed by natural processes during
-                                downstream transport to a specified downstream target reach. A delivery fraction of 1 indicates that 100 percent of the
-                                flow or load leaving the reach is delivered to the downstream target.
-                               
-
-                                <br/> For delivered results shown here, the downstream targets represent the South Atlantic coast and the Gulf of Mexico coast of the US.
-                            </p>
 
                         </div>
 
@@ -835,6 +837,8 @@
 
                 <div id="homeButton"></div>
                 <div id="locateButton"></div>
+                <div id="scale"></div>
+                
 
                 <div id="latLngScale" class="latLngScale">
                     <span class="hover-content"> <b>Map scale </b></span> 1:

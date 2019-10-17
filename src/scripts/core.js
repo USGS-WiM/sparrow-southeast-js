@@ -21,6 +21,7 @@ require([
     "esri/Color",
     "esri/dijit/HomeButton",
     "esri/dijit/LocateButton",
+    "esri/dijit/Scalebar",
     "esri/layers/ArcGISTiledMapServiceLayer",
     "esri/layers/ArcGISDynamicMapServiceLayer",
     "esri/layers/FeatureLayer",
@@ -60,6 +61,7 @@ require([
     Color,
     HomeButton,
     LocateButton,
+    Scalebar,
     ArcGISTiledMapServiceLayer,
     ArcGISDynamicMapServiceLayer,
     FeatureLayer,
@@ -123,15 +125,28 @@ require([
         "homeButton"
     );
     app.home.startup();
+    
+    //change mouseover title of the home button
+    $(".home").prop("title", "Zoom to default extent");
 
     //button for finding and zooming to user's location
     app.locate = new LocateButton(
         {
-            map: app.map
+            map: app.map,
+            scale: 75000
         },
         "locateButton"
     );
-    app.locate.startup();
+    app.locate.startup(); 
+
+    app.scalebar = new Scalebar(
+        {
+            map: app.map,
+            attachTo: "bottom-left",
+            scalebarUnit: "dual"
+        }
+    );
+    //app.scalebar.startup();
 
     app.geocoder = new Geocoder(
         {
