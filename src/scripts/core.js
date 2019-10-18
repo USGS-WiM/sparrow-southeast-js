@@ -142,11 +142,11 @@ require([
     app.scalebar = new Scalebar(
         {
             map: app.map,
-            attachTo: "bottom-left",
+            attachTo: "bottom-right",
             scalebarUnit: "dual"
         }
     );
-    //app.scalebar.startup();
+    
 
     app.geocoder = new Geocoder(
         {
