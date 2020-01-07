@@ -17,9 +17,9 @@ jobs:
     - name: GitHub Action for AWS
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS-REGION: us-east-2
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-2
     - run : s3 cp /github/workspace/build/ s3://test.wim.usgs.gov/sparrow-southeast-test/ --recursive
     - name: GitHub Action for Slack
       uses: Ilshidur/action-slack@9273a03
