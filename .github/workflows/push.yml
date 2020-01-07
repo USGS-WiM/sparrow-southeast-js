@@ -20,7 +20,7 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-2
-    - run : s3 cp /github/workspace/build/ s3://test.wim.usgs.gov/sparrow-southeast-test/ --recursive
+    - run : aws s3 cp /home/runner/work/sparrow-southeast-js/sparrow-southeast-js/build/ s3://test.wim.usgs.gov/sparrow-southeast-test/ --recursive
     - name: GitHub Action for Slack
       uses: Ilshidur/action-slack@9273a03
       env:
