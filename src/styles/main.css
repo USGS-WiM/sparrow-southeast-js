@@ -384,7 +384,7 @@ a.lgi-zoom:hover {
 #sidebar {
     top: 70px;
     padding-bottom: 50px;
-    overflow:visible !important;
+    overflow: visible !important;
     z-index:1000;
 }
 input[type="checkbox"], input[type="radio"] {
@@ -1158,6 +1158,7 @@ Mitch GH Issues Aug 28
 
 .dropdown-menu.inner{
     max-height: 220px !important;
+    overflow: auto;
 }
 
 .esriScalebar{
